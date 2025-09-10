@@ -95,10 +95,16 @@
                            <h3 class="item-name">云易-无代码应用构建平台</h3>
                         </header>
                         <div class="item-bd">
-                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>背景(S):</strong> 为应对市场快速数字化转型需求，公司启动无代码平台项目。初期面临多端代码复用性差、开发效率低、核心功能缺失三大挑战。</p>
-                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>任务(T):</strong> 作为前端负责人，主导前端架构设计，建立高效、可扩展的工程化体系，并牵头完成表单、流程等核心引擎的开发，确保平台高质量交付。</p>
-                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>行动(A):</strong> 采用Pnpm Workspace构建Monorepo，统一管理多端代码；主导设计并开发了四大核心引擎；使用rslib构建高性能基础库@CloudEasy/spider-tool，并在公司内10+个项目推广；引入Vitest自动化测试及Code Review流程保障质量。</p>
-                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>成果(R):</strong> 平台成功上线，服务超百万用户，创造<strong>超千万年收入</strong>。工程化建设将<strong>开发效率提升40%</strong>，<strong>迭代周期缩短30%</strong>。基础库推广使新项目<strong>启动时间减少50%</strong>。</p>
+                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>背景(S):</strong> 面向集团公司内部复杂业务（人事、CRM、项目管理等）快速数字化落地需求，现有项目管理手段复用性差、流程配置能力弱、权限与审批链条割裂，导致交付周期长与维护成本高。</p>
+                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>任务(T):</strong> 作为前端负责人，围绕“模型驱动 + 配置化驱动”的技术路线重构前端架构，打通从数据模型、权限、流程到页面搭建的全链路，支撑多业务场景应用统一构建与独立发布。</p>
+                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>行动(A):</strong></p>
+                           <div style="margin-left: 20px;">
+                              <p class="section-content" style="margin-bottom: 8px;"><strong>• 架构层：</strong>模型驱动 - 将员工/组织/应用等核心实体沉淀为标准化前端数据模型，配合统一状态管理实现单一事实源；配置化方案 - 基于 JSON Schema 生成页面布局、表单结构、表格配置与流程节点；微前端 - 实施模块独立开发与部署，存量模块可平滑接入。</p>
+                              <p class="section-content" style="margin-bottom: 8px;"><strong>• 渲染层：</strong>动态表单 - 实现字段联动与级联校验、异步数据加载机制，研发自动化更新引擎（增量渲染与依赖图驱动更新）；巨量表格 - 基于 Canvas 实现大数据量虚拟滚动渲染，支持列配置动态调整与持久化，利用 LRU + Memoization 缓存优化筛选/排序算法。</p>
+                              <p class="section-content" style="margin-bottom: 8px;"><strong>• 权限层：</strong>基于 RBAC 模型实现打通路由—页面—组件—按钮级权限链路，支持操作级策略与数据级隔离。</p>
+                              <p class="section-content"><strong>• 流程层：</strong>工作流引擎 - 提供可视化流程编排，完成节点状态流转与业务回调，采用乐观并发控制与版本校验保障前后端一致性。</p>
+                           </div>
+                           <p class="section-content"><i class="iconfont icon-dot"></i><strong>成果(R):</strong> 平台稳定服务百万级用户与多业务场景，年度营收<strong>破千万</strong>；配置化驱动将页面/流程开发人天<strong>减少40–60%</strong>，整体迭代周期<strong>缩短30%</strong>；动态表单 P95 渲染延迟<strong>&lt;120ms</strong>，复杂页面 LCP 从<strong>3.2s 降至 1.5s</strong>；虚拟表格平滑承载<strong>10万+</strong>行数据（交互 FPS ≥55），列表操作响应<strong>&lt;200ms</strong>；微前端使单模块发布时长从<strong>30min→5min</strong>，跨团队并行交付效率<strong>+50%</strong>；RBAC 将权限相关缺陷<strong>降低60%</strong>；工作流将端到端审批时长<strong>缩短50%</strong>；帮助集团 5 大核心业务在 3 个月内完成数字化上线，业务落地速度显著提升。</p>
                         </div>
                      </div>
                   </div>
